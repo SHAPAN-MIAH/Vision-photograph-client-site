@@ -1,0 +1,34 @@
+.header-container{
+    height: 620px;
+    position: relative;
+    background-image:url('../../../images/magnolias-on-silk-vienna-wedding-couple-slider-1440x600.png');
+    background-size: cover;
+    position: relative;
+}
+
+.header-container::before,
+.header-container::after{
+    content: "";
+    position: absolute;
+    height: 100px;
+    bottom: -60px;
+    right: 0px;
+    left: 0px;
+    background: #fff;
+    transform: skewY(-3deg);
+    -webkit-transform: skewY(-3deg);
+    -moz-transform: skewY(-3deg);
+    -ms-transform: skewY(-3deg);
+}
+
+
+@media(max-width:768px){
+    .header-container::after{
+        width: 100%;
+        
+    }
+    .header-container{
+        height: auto;
+        
+    }
+}

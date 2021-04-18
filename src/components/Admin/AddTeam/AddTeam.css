@@ -1,0 +1,19 @@
+.AddTeamForm-container{
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    padding: 40px;
+}
+.AddTeamForm-container h4{
+    color: #7a7a7a;
+    text-align: center;
+}
+.teamAddBtn{
+    padding: 10px 50px;
+    border: none;
+    outline: none;
+    color: white;
+    background: #7a7a7a;
+    border-radius: 5px;
+}
+.teamAddBtn:hover{
+    background: #da7b00;
+}

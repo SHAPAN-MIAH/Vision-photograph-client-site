@@ -1,0 +1,55 @@
+#topBar{
+	background: #f8f8f8;
+	margin : auto;
+	font-size: 15px;
+	font-family: arial;
+	padding: 10px 0px;
+	color: #6e6e6e;
+}
+.phone, .email{
+    border-left: 1px solid #9999;
+    padding-left: 5px;
+}
+.phone .icon{
+	color :#da7b00;
+}
+.email .icon {
+	color: #da7b00;
+}
+.social{
+	float: right;
+}
+.social a {
+	padding: 0px 15px;
+	color: black;
+	border-left :1px solid #9999;
+	padding: 11px 10px;
+	transition: all 0.5s;
+    color: #da7b00;
+
+}
+.social a:last-child {
+	border-right :1px solid #9999;
+}
+.social a:hover{
+	color: rgb(88, 88, 88);
+}
+
+
+@media (max-width: 768px) {
+    .social{
+        float: left;
+        border: none;
+        margin-left: 35%;
+    }
+    .social a, .social a:last-child{
+        border: none;
+        font-size: 25px;
+    }
+    .phone, .email{
+        margin-bottom: 10px;
+        text-align: center;
+        border-left: none;
+        padding-left: 0px;
+    }
+}

@@ -1,0 +1,31 @@
+.quote-icon{
+    font-size: 40px;
+    color: white;
+    background: #da7b00;
+    width: 60px;
+    height: 60px;
+    text-align:center;
+    margin-left: auto;
+
+}
+.card-container h6{
+    color: #da7b00;
+}
+.card-container{
+    border: none !important;
+    border-radius: none !important;
+    background: #f3f3f3 !important;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    transition: all .5s;
+}
+.card-container:hover{
+    background: #da7b00 !important;
+    color: white;
+}
+.card-container:hover h6{
+    color:white;
+}
+.card-container:hover .quote-icon{
+    color:#da7b00;
+    background: white;
+}

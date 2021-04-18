@@ -1,0 +1,40 @@
+.sidebar{
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background-image: linear-gradient(40deg, #bd6b00,#ff9102);
+}
+.sidebar li{
+    margin-bottom: 2em;
+    font-weight: 500;
+}
+.log-out{
+    font-weight: 500;
+}
+.sidebar li span{
+    display: inline-block;
+    color: white;
+}
+.sidebar li:hover span{
+    display: inline-block;
+    color: rgb(199, 199, 199);
+}
+.icons, .logout{
+    color: white;
+}
+.sidebar li:hover .icons,
+ .icons:hover,
+ .logout:hover{
+    color: rgb(199, 199, 199);
+}
+.sidebar svg{
+    margin-right: 5px;
+}
+
+@media(max-width: 768px){
+    .sidebar{
+        position: fixed;
+        height: auto;
+        
+    }
+}

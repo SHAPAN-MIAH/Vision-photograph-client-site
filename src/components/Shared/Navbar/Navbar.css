@@ -1,0 +1,12 @@
+#navbarSupportedContent li a{
+    color:  #3d3d3d;
+    font-weight: 500;
+}
+#navbarSupportedContent li a:hover{
+    color: #ff9100;
+}
+@media(max-width: 768px){
+    #mainlogo{
+        margin-left: 0px !important;
+    }
+}

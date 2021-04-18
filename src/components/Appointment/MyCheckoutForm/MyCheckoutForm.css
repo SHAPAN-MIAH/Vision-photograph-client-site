@@ -1,0 +1,12 @@
+.payBtn{
+    padding: 7px 50px;
+    border: none;
+    background: #707070;
+    color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: all .5s;
+}
+.payBtn:hover{
+    background: #da7b00;
+}

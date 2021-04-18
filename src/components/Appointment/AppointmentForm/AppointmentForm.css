@@ -1,0 +1,51 @@
+.form-Container{
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+
+}
+.serviceName{
+    color: #707070;
+    margin-bottom: 20px;
+}
+.appointment-submitBtn{
+    background: #707070;
+    color: white;
+    padding: 7px 50px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: all .5s;
+    
+}
+.appointment-submitBtn:hover{
+    background: #da7b00;
+    color: white;
+}
+
+.payment-container{
+    border: 1px solid lavender;
+    padding: 40px;
+    background: #f0f0f0;
+    margin-top: 100px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+.payment-container h5{
+    margin-bottom: 15px;
+    color: #707070;
+}
+.payment-container p{
+    margin-top: 10px;
+    color: #da7b00;
+    font-weight: 500;
+}
+@media(max-width: 768px){
+    .formContainer{
+        height: auto;
+        
+    }
+    .appointment-submitBtn{
+        padding: 7px 170px;
+        text-align: center;
+        margin-left: 0;
+        
+    }
+}

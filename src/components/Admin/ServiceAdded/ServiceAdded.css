@@ -1,0 +1,20 @@
+.serviceAddForm-container{
+    padding: 40px;
+    padding-bottom: 0;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+.serviceAddBtn{
+    padding: 10px 50px;
+    border: none;
+    outline: none;
+    color: white;
+    background: #7a7a7a;
+    border-radius: 5px;
+}
+.serviceAddBtn:hover{
+    background: #da7b00;
+}
+.teamTitle{
+    text-align:center;
+    color: #7a7a7a;
+}

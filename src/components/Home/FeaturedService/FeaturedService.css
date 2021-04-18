@@ -1,0 +1,44 @@
+.featured-container{
+    padding: 60px 0px;
+    background: #f3f3f3;
+    
+}
+.feature-title{
+    color: #7a7a7a;
+}
+.feature-title span{
+    color: #da7b00;
+}
+.feature-dec{
+    color: #5a5a5a;
+}
+
+.count{
+    color: #5a5a5a;
+}
+#countIcon{
+    color: #da7b00;
+    font-size: 30px;
+    transition: all 0.5s;
+}
+.Cp:hover #countIcon,
+.Rp:hover #countIcon,
+.Hc:hover #countIcon{
+    transform: rotateY(360deg)
+}
+.LearnMore-btn{
+    background: #5a5a5a;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.LearnMore-btn:hover{
+    background: #da7b00;
+}
+.counter{
+    font-size: 20px;
+    font-weight: 500;
+    color: #7a7a7a;
+}
