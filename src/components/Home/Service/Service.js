@@ -20,7 +20,7 @@ const Service = () => {
             <div className="d-flex justify-content-center align-items-center">
                 <div className="pt-3 row">
                     {
-                    serviceData.map(service => <ServiceDtl service={service}></ServiceDtl>)  
+                    serviceData.map(service => <ServiceDtl key={service.key} service={service}></ServiceDtl>)  
                     }
                 </div>
             </div>

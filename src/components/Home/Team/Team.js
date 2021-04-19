@@ -24,7 +24,7 @@ const Team = () => {
                     </div>
                 <div className="row">
                     {
-                     teams.map(teamData => <TeamDtl teamData={teamData}></TeamDtl> )
+                     teams.map(teamData => <TeamDtl key={teamData.key} teamData={teamData}></TeamDtl> )
                     }
                 </div>  
                 <div className="text-center m-3">

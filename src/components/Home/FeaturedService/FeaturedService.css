@@ -1,5 +1,6 @@
 .featured-container{
-    padding: 60px 0px;
+    padding-top: 60px;
+    padding-bottom: 40px;
     background: #f3f3f3;
     
 }
@@ -17,14 +18,15 @@
     color: #5a5a5a;
 }
 #countIcon{
-    color: #da7b00;
+    color: #5a5a5a;
     font-size: 30px;
     transition: all 0.5s;
 }
 .Cp:hover #countIcon,
 .Rp:hover #countIcon,
 .Hc:hover #countIcon{
-    transform: rotateY(360deg)
+    transform: rotateY(360deg);
+    color: #da7b00;
 }
 .LearnMore-btn{
     background: #5a5a5a;
