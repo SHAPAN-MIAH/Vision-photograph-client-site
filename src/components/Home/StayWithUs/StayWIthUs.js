@@ -8,7 +8,7 @@ const StayWIthUs = () => {
              <h3>If you can laugh together, you can work together.</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed obcaecati quo maiores facilis placeat excepturi. Ipsam architecto, officia vitae, aliquam aut libero soluta dolor deleniti omnis odit harum perspiciatis qui!</p>
            <input type="search" name="" id=""/>
-           <input type="button" value="Search"/>
+           <input id="searchBtn" type="button" value="Search"/>
            </div>
         </div>
     );

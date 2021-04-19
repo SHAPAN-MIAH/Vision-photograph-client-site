@@ -2,9 +2,9 @@ import React, { useContext, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Sidebar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCog, faSignOutAlt, faCalendar, faGripHorizontal, faUsers, faFileAlt } from '@fortawesome/free-solid-svg-icons';
+import { faCog, faSignOutAlt, faCalendar, faGripHorizontal, faUsers, faUserCog } from '@fortawesome/free-solid-svg-icons';
 import { UserContext } from '../../../App';
-// import {  faFileAlt } from '@fortawesome/free-regular-svg-icons'
+
 
 const Sidebar = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
@@ -40,7 +40,7 @@ const Sidebar = () => {
                         </li>
                         <li>
                             <Link to="/addAdmin">
-                                <FontAwesomeIcon className="icons" icon={faFileAlt} /><span>Add Admin</span>
+                                <FontAwesomeIcon className="icons" icon={faUserCog} /><span>Add Admin</span>
                             </Link>
                         </li>
                         <li>

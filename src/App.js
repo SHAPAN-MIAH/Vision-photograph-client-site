@@ -9,18 +9,18 @@ import Home from "./components/Home/Home/Home";
 import Login from './components/Login/Login/Login';
 import Appointment from "./components/Appointment/Appointment/Appointment";
 import Admin from "./components/Admin/Admin/Admin";
-import AppointmentForm from "./components/Appointment/AppointmentForm/AppointmentForm";
 import ServiceAdded from "./components/Admin/ServiceAdded/ServiceAdded";
 import AddTeam from "./components/Admin/AddTeam/AddTeam";
 import Reviews from "./components/UserComponent/Reviews/Reviews";
 import PrivateRoute from "./components/Login/PrivateRoute/PrivateRoute"
 import Dashboard from "./components/Dashboard/Dashboard/Dashboard";
 import AddAdmin from "./components/Admin/AddAdmin/AddAdmin";
-import AppointmentList from "./components/Dashboard/AppointmentList/AppointmentList";
 import AppointmentLists from "./components/UserComponent/AppointmentLists/AppointMentLists";
 import Team from "./components/Home/Team/Team";
-import Footer from "./components/Shared/Footer/Footer";
 import NoMatch from "./components/NoMatch/NoMatch";
+import ContactUs from "./components/ContactUs/ContactUs";
+import Settings from "./components/Admin/Settings/Settings";
+import Testimonials from "./components/Home/Testimonials/Testimonials";
 export const UserContext = createContext();
 
 function App() {
@@ -38,6 +38,12 @@ function App() {
                 </Route>
                 <Route path="/team">
                   <Team/>
+                </Route>
+                <Route path="/testimonial">
+                  <Testimonials/>
+                </Route>
+                <Route path="/contact">
+                  <ContactUs/>
                 </Route>
                 <PrivateRoute path="/appointment/:id">
                   <Appointment/>
@@ -65,6 +71,9 @@ function App() {
                 </PrivateRoute>
                 <PrivateRoute path="/appointmentLists">
                   <AppointmentLists />
+                </PrivateRoute>
+                <PrivateRoute path="/setting">
+                  <Settings/>
                 </PrivateRoute>
                 <Route path="*">
                   <NoMatch/>

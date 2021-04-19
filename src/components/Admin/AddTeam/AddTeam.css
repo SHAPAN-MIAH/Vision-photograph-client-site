@@ -1,6 +1,7 @@
 .AddTeamForm-container{
     box-shadow: 0 3px 10px rgba(0,0,0,0.2);
     padding: 40px;
+    padding-bottom: 0;
 }
 .AddTeamForm-container h4{
     color: #7a7a7a;

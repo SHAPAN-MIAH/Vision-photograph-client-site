@@ -10,6 +10,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGoogle } from '@fortawesome/free-brands-svg-icons';
 import { UserContext } from '../../../App';
 import LoginBg from '../../../images/photographer.png';
+import Navbar from '../../Shared/Navbar/Navbar';
 
 
     if(!firebase.apps.length){
@@ -149,7 +150,8 @@ const Login = () => {
 
 
     return (
-        <div className="container login-container">
+        <div className="container-fluid login-container">
+        <Navbar/>
             <div className="row">
               <div className="col-md-6">
                   <div className="formContainer">
@@ -161,8 +163,6 @@ const Login = () => {
                           <br/>
                           <input  type="password" onBlur={handelBlur} name="password" placeholder="Password" required/>
                           <br/>
-                          {/* <input  type="password" onBlur={handelBlur} name="confirmPassword" placeholder="Confirm Password" required/> */}
-                          {/* <br/> */}
                           <input id="submitBtn" type="submit" value={newUser ? 'Create an account' : 'Login'}/>
                       </form>
 

@@ -1,4 +1,3 @@
-// import React from 'react';
 import React, { useEffect, useState } from 'react';
 import { useForm } from "react-hook-form";
 import { useParams } from 'react-router-dom';
@@ -37,7 +36,7 @@ const AppointmentForm = () => {
         .then(res => res.json())
         .then(success => {
             if(success){
-                alert('Appointment created successfully. Check dashboard for your appointment details.');
+                alert('Appointment created successfully. Check appointment list for details.');
             }
         })
     }
@@ -45,7 +44,7 @@ const AppointmentForm = () => {
     return (
         <section>
                 <div className="row">
-                    <div className="col-md-8" style={{display: appointmentData ? 'none' : 'block'}} >
+                    <div className="col-md-10 mt-5" style={{display: appointmentData ? 'none' : 'block'}} >
                         
                         <div className="form-Container">
                             <form className="p-5" onSubmit={handleSubmit(onSubmit)}>

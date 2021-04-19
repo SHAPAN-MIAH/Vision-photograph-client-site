@@ -3,6 +3,7 @@ import './Testimonials.css';
 import Testimonial from '../Testimonial/Testimonial';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'react-router-dom';
 
 
 const Testimonials = () => {
@@ -28,7 +29,9 @@ const Testimonials = () => {
                 </div>
            </div>
            <div className="text-center m-5">
-                 <button className="showMoreBtn">Show More <FontAwesomeIcon  icon={faArrowRight}></FontAwesomeIcon></button>
+                 <Link to="/testimonial">
+                    <button className="showMoreBtn">Show More <FontAwesomeIcon  icon={faArrowRight}></FontAwesomeIcon></button>
+                 </Link>
             </div> 
        </section>
     );

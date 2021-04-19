@@ -17,10 +17,13 @@
     border: none;
     padding: 10px 30px;
     margin: 5px;
-    border-radius: 5px;
 }
 .stayContent h3{
     padding-top: 130px;
+}
+#searchBtn{
+    background: #da7b00;
+    color: #ffffff;
 }
 @media(max-width: 768px){
     .stayContent{

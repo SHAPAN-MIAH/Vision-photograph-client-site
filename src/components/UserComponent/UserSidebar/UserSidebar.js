@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSignOutAlt, faCalendar, faGripHorizontal, faFileAlt } from '@fortawesome/free-solid-svg-icons';
+import { faSignOutAlt, faCalendar, faFileAlt, faCommentDots } from '@fortawesome/free-solid-svg-icons';
 
 
 const UserSidebar = () => {
@@ -10,7 +10,7 @@ const UserSidebar = () => {
             <ul className="list-unstyled">
                 <li>
                     <Link to="/appointmentLists">
-                        <FontAwesomeIcon className="icons" icon={faGripHorizontal} /><span>Appointment List</span> 
+                        <FontAwesomeIcon className="icons" icon={faFileAlt} /><span>Appointment List</span> 
                     </Link>
                 </li>
                 <li>
@@ -20,7 +20,7 @@ const UserSidebar = () => {
                 </li>
                 <li>
                     <Link to="/review">
-                        <FontAwesomeIcon className="icons" icon={faFileAlt} /><span>Review</span>
+                        <FontAwesomeIcon className="icons" icon={faCommentDots} /><span>Review</span>
                     </Link>
                 </li>
             </ul>

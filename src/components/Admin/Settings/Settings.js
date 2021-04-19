@@ -3,22 +3,20 @@ import Dashboard from '../../Dashboard/Dashboard/Dashboard';
 import Navbar from '../../Shared/Navbar/Navbar';
 import Sidebar from '../Sidebar/Sidebar';
 
-
-const Admin = () => {
-
+const Settings = () => {
     return (
-        <section className="container-fluid">
+        <div className="container-fluid">
             <Navbar/>
             <div className="row">
-                <div className="col-md-2 ">
+                <div className="col-md-2">
                     <Sidebar/>
                 </div>
                 <div className="col-md-10">
                     <Dashboard/>
                 </div>
             </div>
-        </section>
+        </div>
     );
 };
 
-export default Admin;
+export default Settings;

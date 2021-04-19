@@ -40,14 +40,14 @@ const Reviews = () => {
         })
     }
     return (
-        <section className="container-fluid">
+        <section>
             <Navbar/>
             <div className="row">
                 <div className="col-md-2">
                     <USerSidebar/>
                 </div>
                 <div className="col-md-8">
-                        <div className="review-form">
+                        <div className="review-form mt-5">
                             <h4>Please drop your review</h4>
                             <form className="p-5" onSubmit={handleSubmit(onSubmit)}>
                                 <div className="form-group">
@@ -71,7 +71,6 @@ const Reviews = () => {
                 </div>
                 
             </div>
-            
         </section>
     );
 };

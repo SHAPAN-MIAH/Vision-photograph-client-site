@@ -3,6 +3,7 @@ import TeamDtl from '../TeamDtl/TeamDtl';
 import './Team.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 
 
 
@@ -15,7 +16,7 @@ const Team = () => {
     }, [])
 
     return (
-        <section className="teamSection container-fluid">
+        <section className="teamSection container">
             
                     <div className="text-center">
                         <h3 class="team-heading justify-content-center"> <span>MEET</span> OUR TEAM</h3>
@@ -27,7 +28,9 @@ const Team = () => {
                     }
                 </div>  
                 <div className="text-center m-3">
-                 <button className="showMoreBtn">Show More <FontAwesomeIcon  icon={faArrowRight}></FontAwesomeIcon></button>
+                 <Link to="/team">
+                    <button className="showMoreBtn">Show More <FontAwesomeIcon  icon={faArrowRight}></FontAwesomeIcon></button>
+                 </Link>
                 </div> 
         </section>
     );
