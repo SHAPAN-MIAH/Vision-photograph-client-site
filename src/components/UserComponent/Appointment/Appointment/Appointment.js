@@ -7,9 +7,11 @@ import './Appointment.css'
 const Appointment = () => {
 
     return (
-        <div className="Appointment-container">
+        <div>
+            <div style={{boxShadow: "0 3px 10px rgba(0,0,0,0.2)"}}>
             <Navbar/>
-            <div className="row">
+            </div>
+            <div className="row Appointment-container">
                 <div className="col-md-2">
                     <UserSidebar/>
                 </div>

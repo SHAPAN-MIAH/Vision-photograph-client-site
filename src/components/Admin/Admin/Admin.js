@@ -13,9 +13,11 @@ const Admin = () => {
     }, [])
 
     return (
-        <section className="container-fluid">
+        <section>
+            <div style={{boxShadow: "0 3px 10px rgba(0,0,0,0.2)"}}>
             <Navbar/>
-            <div className="row">
+            </div>
+            <div className="row container-fluid">
                 <div className="col-md-2 ">
                     <Sidebar/>
                 </div>

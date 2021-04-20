@@ -1,8 +1,7 @@
 import { faTrashAlt } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import axios from 'axios';
-import React, { useContext, useEffect, useState } from 'react';
-import { UserContext } from '../../../App';
+import React, { useEffect, useState } from 'react';
 import Navbar from '../../Shared/Navbar/Navbar';
 import Sidebar from '../Sidebar/Sidebar';
 import './Settings.css';
@@ -31,10 +30,12 @@ const Settings = () => {
     }
 
     return (
-        <div className="container-fluid">
+        <div>
+            <div style={{boxShadow: "0 3px 10px rgba(0,0,0,0.2)"}}>
             <Navbar/>
+            </div>
             
-                <div className="row">
+                <div className="row container-fluid">
                     <div className="col-md-2">
                         <Sidebar/>
                     </div>

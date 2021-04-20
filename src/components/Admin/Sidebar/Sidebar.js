@@ -9,6 +9,7 @@ import { UserContext } from '../../../App';
 const Sidebar = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
     const [isAdmin, setIsAdmin] = useState(false);
+    console.log(isAdmin)
 
     
     useEffect(()=> {
@@ -19,11 +20,12 @@ const Sidebar = () => {
         })
         .then(res => res.json())
         .then(data => setIsAdmin(data))
+        .then(data => console.log(data))
     }, [])
     
     return (
         <div className="sidebar  flex-column justify-content-between py-5 px-4">
-            <div>
+             <div>
                     <ul className="list-unstyled">
                         <li>
                             <Link to="/admin/appointmentList">

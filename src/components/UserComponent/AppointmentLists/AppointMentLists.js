@@ -20,7 +20,9 @@ const AppointmentLists = () => {
     }, [])
     return (
         <div>
+            <div style={{boxShadow: "0 3px 10px rgba(0,0,0,0.2)"}}>
             <Navbar/>
+            </div>
             <div className="row">
             
             <div className="col-md-2">

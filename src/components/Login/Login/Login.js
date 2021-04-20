@@ -150,37 +150,42 @@ const Login = () => {
 
 
     return (
-        <div className="container-fluid login-container">
-        <Navbar/>
-            <div className="row">
-              <div className="col-md-6">
-                  <div className="formContainer">
-                      <h5> {newUser ? 'Create an account' : 'Login'}</h5>
-                      <form onSubmit={handelSubmit}>
-                          {newUser && <input  type="text" onBlur={handelBlur} name="name" placeholder="Your name" required/>}
-                          <br/>
-                          <input  type="email" onBlur={handelBlur} name="email"  placeholder="Your email" required/>
-                          <br/>
-                          <input  type="password" onBlur={handelBlur} name="password" placeholder="Password" required/>
-                          <br/>
-                          <input id="submitBtn" type="submit" value={newUser ? 'Create an account' : 'Login'}/>
-                      </form>
-
-                      <div className="loginToggle">
-                          <span>{newUser ?'Alrady have an account? ' : 'Need an account?  '}</span>
-                          <strong onClick={()=> setNewUser(!newUser)}>{newUser ? 'Login' : 'Create account'}</strong>
-                      </div>
-                  </div>
-                    <br/>
-                    <h5 className="or">Or</h5>
-                    <button onClick={handelGoogleSignIn} className="google-btn"><FontAwesomeIcon className="gIcon" icon={faGoogle} /> Continue With Google</button>
-            
-              </div>
-              <div className="col-md-6">
-                  <img className="img-fluid loginImg" src={LoginBg} alt="" />
-              </div>
+        <section>
+            <div style={{boxShadow: "0 3px 10px rgba(0,0,0,0.2)"}}>
+                <Navbar/>
             </div>
-        </div>
+                <div className="container-fluid login-container">
+          
+                  <div className="row">
+                    <div className="col-md-6">
+                        <div className="formContainer">
+                            <h5> {newUser ? 'Create an account' : 'Login'}</h5>
+                            <form onSubmit={handelSubmit}>
+                                {newUser && <input  type="text" onBlur={handelBlur} name="name" placeholder="Your name" required/>}
+                                <br/>
+                                <input  type="email" onBlur={handelBlur} name="email"  placeholder="Your email" required/>
+                                <br/>
+                                <input  type="password" onBlur={handelBlur} name="password" placeholder="Password" required/>
+                                <br/>
+                                <input id="submitBtn" type="submit" value={newUser ? 'Create an account' : 'Login'}/>
+                            </form>
+
+                            <div className="loginToggle">
+                                <span>{newUser ?'Alrady have an account? ' : 'Need an account?  '}</span>
+                                <strong onClick={()=> setNewUser(!newUser)}>{newUser ? 'Login' : 'Create account'}</strong>
+                            </div>
+                        </div>
+                          <br/>
+                          <h5 className="or">Or</h5>
+                          <button onClick={handelGoogleSignIn} className="google-btn"><FontAwesomeIcon className="gIcon" icon={faGoogle} /> Continue With Google</button>
+                  
+                    </div>
+                    <div className="col-md-6">
+                        <img className="img-fluid loginImg" src={LoginBg} alt="" />
+                    </div>
+                  </div>
+              </div>
+        </section>
     );
 };
 
