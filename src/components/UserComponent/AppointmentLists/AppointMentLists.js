@@ -1,13 +1,20 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
+// import { UserContext } from '../../../App';
 import Navbar from '../../Shared/Navbar/Navbar';
 import UserSidebar from '../UserSidebar/UserSidebar';
 
 
 const AppointmentLists = () => {
-    const [appointmentsList, setAppointmentsList] = useState([])
+    const [appointmentsList, setAppointmentsList] = useState([]);
+    // const [loggedInUser, setLoggedInUser] = useContext(UserContext);
 
     useEffect(()=> {
         fetch('https://fast-garden-51323.herokuapp.com/appointments')
+        // fetch('http://localhost:5500/isUSer',{
+        //     method: 'post',
+        //     headers: { 'content-type': 'application/json' },
+        //     body: JSON.stringify({email: loggedInUser.email})
+        // })
         .then(res => res.json())
         .then(data => setAppointmentsList(data))
     }, [])
@@ -16,12 +23,12 @@ const AppointmentLists = () => {
             <Navbar/>
             <div className="row">
             
-            <div className="col-md-2 ml-3">
+            <div className="col-md-2">
                 <UserSidebar/>
             </div>
-            <div className="col-md-8 appointmentData-table mt-5 ml-3">
+            <div className="col-md-8 appointmentData-table mt-5 ml-4">
             
-            <table class="table">
+            <table className="table">
                 <thead>
                     <tr>
                         <th scope="col">No</th>

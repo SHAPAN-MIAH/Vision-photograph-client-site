@@ -8,6 +8,8 @@ import { Link } from 'react-router-dom';
 
 const Testimonials = () => {
     const [testimonialData, setTestimonialData] = useState([])
+    const someReviews = testimonialData.slice(0,3);
+
     useEffect(()=> {
         fetch('https://fast-garden-51323.herokuapp.com/reviews')
         .then(res => res.json())
@@ -24,7 +26,7 @@ const Testimonials = () => {
            <h3 className="clientSays">What Our <span>Clients <br/> Says</span> </h3>
                <div className="card-deck mt-5">
                     {
-                        testimonialData.map(testimonial => <Testimonial key={testimonial.key} testimonial={testimonial} key={testimonial.name}/>)
+                        someReviews.map(testimonial => <Testimonial key={testimonial.key} testimonial={testimonial} key={testimonial.name}/>)
                     }
                 </div>
            </div>

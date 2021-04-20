@@ -29,7 +29,9 @@ const AddTeam = () => {
         };
         console.log(teamData)
         axios.post('https://fast-garden-51323.herokuapp.com/addTeam', teamData)
-        .then(res => console.log("response", res))
+        .then(res => {
+            alert('Team member added successfully.')
+        })
     }
     
     

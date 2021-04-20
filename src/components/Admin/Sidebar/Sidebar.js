@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Sidebar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCog, faSignOutAlt, faCalendar, faGripHorizontal, faUsers, faUserCog } from '@fortawesome/free-solid-svg-icons';
+import { faCog, faSignOutAlt, faCalendar, faGripHorizontal, faUsers, faUserCog, faFile, faFileAlt } from '@fortawesome/free-solid-svg-icons';
 import { UserContext } from '../../../App';
 
 
@@ -10,6 +10,7 @@ const Sidebar = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
     const [isAdmin, setIsAdmin] = useState(false);
 
+    
     useEffect(()=> {
         fetch('https://fast-garden-51323.herokuapp.com/isAdmin', {
             method: 'POST',
@@ -19,13 +20,14 @@ const Sidebar = () => {
         .then(res => res.json())
         .then(data => setIsAdmin(data))
     }, [])
+    
     return (
         <div className="sidebar  flex-column justify-content-between py-5 px-4">
             <div>
                     <ul className="list-unstyled">
                         <li>
-                            <Link to="/admin/dashboard">
-                                <FontAwesomeIcon className="icons" icon={faGripHorizontal} /><span>Dashboard</span> 
+                            <Link to="/admin/appointmentList">
+                                <FontAwesomeIcon className="icons" icon={faFileAlt} /><span>Appointment List</span> 
                             </Link>
                         </li>
                         <li>

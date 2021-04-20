@@ -22,21 +22,21 @@ const FeaturedService = () => {
                         </Link>
 
                         <div className="count row m-3 text-center">
-                            <div class="col-sm-4">
+                            <div className="col-sm-4">
                                 <div className="Cp">
                                     <div id="countIcon"> <FontAwesomeIcon  icon={faProjectDiagram}></FontAwesomeIcon> </div>
                                     <div className="counter">1756 +</div>
                                     <h6>Complete Project</h6>
                                 </div>
                             </div>
-                            <div class="col-sm-4">
+                            <div className="col-sm-4">
                                 <div className="Rp">
                                     <div id="countIcon"> <FontAwesomeIcon  icon={faCamera}></FontAwesomeIcon> </div>
                                     <div className="counter">321 +</div>
                                     <h6>Running Project</h6>
                                 </div>
                             </div>
-                            <div class="col-sm-4">
+                            <div className="col-sm-4">
                                 <div className="Hc">
                                     <div id="countIcon"> <FontAwesomeIcon  icon={faUserCheck}></FontAwesomeIcon> </div>
                                     <div className="counter">1550 +</div>

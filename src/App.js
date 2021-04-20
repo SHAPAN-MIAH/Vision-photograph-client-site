@@ -7,7 +7,6 @@ import {
 } from "react-router-dom";
 import Home from "./components/Home/Home/Home";
 import Login from './components/Login/Login/Login';
-import Appointment from "./components/Appointment/Appointment/Appointment";
 import Admin from "./components/Admin/Admin/Admin";
 import ServiceAdded from "./components/Admin/ServiceAdded/ServiceAdded";
 import AddTeam from "./components/Admin/AddTeam/AddTeam";
@@ -21,6 +20,7 @@ import NoMatch from "./components/NoMatch/NoMatch";
 import ContactUs from "./components/ContactUs/ContactUs";
 import Settings from "./components/Admin/Settings/Settings";
 import Testimonials from "./components/Home/Testimonials/Testimonials";
+import Appointment from "./components/UserComponent/Appointment/Appointment/Appointment";
 export const UserContext = createContext();
 
 function App() {
@@ -66,7 +66,7 @@ function App() {
                 <PrivateRoute path="/appointment">
                   <Appointment/>
                 </PrivateRoute>
-                <PrivateRoute path="/admin/dashboard">
+                <PrivateRoute path="/admin/appointmentList">
                   <Dashboard/>
                 </PrivateRoute>
                 <PrivateRoute path="/appointmentLists">

@@ -6,8 +6,8 @@ import { faSignOutAlt, faCalendar, faFileAlt, faCommentDots } from '@fortawesome
 
 const UserSidebar = () => {
     return (
-        <div className="sidebar  flex-column justify-content-between py-5 px-4">
-            <ul className="list-unstyled">
+        <div className="sidebar  flex-column justify-content-between py-5 px-4 ml-3">
+            <ul className="list-unstyled ">
                 <li>
                     <Link to="/appointmentLists">
                         <FontAwesomeIcon className="icons" icon={faFileAlt} /><span>Appointment List</span> 

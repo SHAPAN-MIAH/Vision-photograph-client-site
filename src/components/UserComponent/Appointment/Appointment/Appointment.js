@@ -1,6 +1,6 @@
 import React from 'react';
-import Navbar from '../../Shared/Navbar/Navbar';
-import UserSidebar from '../../UserComponent/UserSidebar/UserSidebar';
+import Navbar from '../../../Shared/Navbar/Navbar';
+import UserSidebar from '../../UserSidebar/UserSidebar';
 import AppointmentForm from '../AppointmentForm/AppointmentForm';
 import './Appointment.css'
 

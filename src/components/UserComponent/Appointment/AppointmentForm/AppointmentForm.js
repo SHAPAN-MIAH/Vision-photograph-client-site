@@ -44,7 +44,7 @@ const AppointmentForm = () => {
     return (
         <section>
                 <div className="row">
-                    <div className="col-md-10 mt-5" style={{display: appointmentData ? 'none' : 'block'}} >
+                    <div className="col-md-10 mt-5 ml-3" style={{display: appointmentData ? 'none' : 'block'}} >
                         
                         <div className="form-Container">
                             <form className="p-5" onSubmit={handleSubmit(onSubmit)}>

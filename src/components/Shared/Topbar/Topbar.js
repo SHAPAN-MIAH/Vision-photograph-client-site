@@ -7,16 +7,16 @@ import './Topbar.css';
 const Topbar = () => {
     return (
         <section id="topBar">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="phone"><FontAwesomeIcon className="icon" icon={faPhoneAlt}></FontAwesomeIcon> Phone: +(98) 888 7777</div>
+            <div className="container">
+                <div className="row">
+                    <div className="col-md-3">
+                        <div className="phone"><FontAwesomeIcon className="icon" icon={faPhoneAlt}></FontAwesomeIcon> Phone: +(98) 888 7777</div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="email"><FontAwesomeIcon className="icon" icon={faEnvelope}></FontAwesomeIcon> Email: sample-email@example.com</div>
+                    <div className="col-md-4">
+                        <div className="email"><FontAwesomeIcon className="icon" icon={faEnvelope}></FontAwesomeIcon> Email: sample-email@example.com</div>
                     </div>
-                    <div class="col-md-5">
-                        <div class="social">
+                    <div className="col-md-5">
+                        <div className="social">
                             <a href=""><FontAwesomeIcon className="icon" icon={faFacebook}></FontAwesomeIcon></a>
                             <a href=""><FontAwesomeIcon className="icon" icon={faInstagram}></FontAwesomeIcon></a>
                             <a href=""><FontAwesomeIcon className="icon" icon={faYoutube}></FontAwesomeIcon></a>

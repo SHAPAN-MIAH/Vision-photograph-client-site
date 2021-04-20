@@ -19,8 +19,8 @@ const Team = () => {
         <section className="teamSection container">
             
                     <div className="text-center">
-                        <h3 class="team-heading justify-content-center"> <span>MEET</span> OUR TEAM</h3>
-                        <p class="tm-hdContent">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint aliquam quidem, asperiores repellendus vero vitae.</p>
+                        <h3 className="team-heading justify-content-center"> <span>MEET</span> OUR TEAM</h3>
+                        <p className="tm-hdContent">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint aliquam quidem, asperiores repellendus vero vitae.</p>
                     </div>
                 <div className="row">
                     {
