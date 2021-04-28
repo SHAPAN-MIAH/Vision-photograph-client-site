@@ -44,3 +44,14 @@
     font-weight: 500;
     color: #7a7a7a;
 }
+
+.Cp:hover .counter,
+.Rp:hover .counter,
+.Hc:hover .counter{
+    color: #da7b00;
+}
+.Cp:hover h6,
+.Rp:hover h6,
+.Hc:hover h6{
+    color: #da7b00;
+}

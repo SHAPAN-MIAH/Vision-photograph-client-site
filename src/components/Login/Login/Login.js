@@ -9,7 +9,7 @@ import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGoogle } from '@fortawesome/free-brands-svg-icons';
 import { UserContext } from '../../../App';
-import LoginBg from '../../../images/photographer.png';
+import LoginBg from '../../../images/vison photogrphay img.png';
 import Navbar from '../../Shared/Navbar/Navbar';
 
 

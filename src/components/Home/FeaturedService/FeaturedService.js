@@ -6,6 +6,31 @@ import featuredImg from "../../../images/photographer-1805317_960_720.jpg";
 import './FeaturedService.css'
 
 const FeaturedService = () => {
+
+    // const featuredContainer = document.querySelector('.featured-container');
+    // const counters = document.querySelectorAll(".counter");
+    // const speed = 3000;
+
+
+    // counters.forEach(counter => {
+    //     const updateCount = () => {
+    //         const target = +counter.getAttribute('data-target');
+    //         const count = +counter.innerText;
+
+    //         const inc = target / speed;
+
+    //         if (count < target) {
+    //             counter.innerText = Math.ceil(count + inc);
+    //             setTimeout(updateCount, 1);
+    //         } else {
+    //             counter.innerText = target;
+    //         }
+    //     }
+    //     featuredContainer.addEventListener('mouseenter', Event =>{
+    //         updateCount();
+    //     })
+        
+    // })
     
     return (
         <section className="my-5 featured-container">
@@ -25,22 +50,22 @@ const FeaturedService = () => {
                             <div className="col-sm-4">
                                 <div className="Cp">
                                     <div id="countIcon"> <FontAwesomeIcon  icon={faProjectDiagram}></FontAwesomeIcon> </div>
-                                    <div className="counter">1756 +</div>
+                                    <div className="counter" data-target="1750">500 +</div>
                                     <h6>Complete Project</h6>
-                                </div>
-                            </div>
-                            <div className="col-sm-4">
-                                <div className="Rp">
-                                    <div id="countIcon"> <FontAwesomeIcon  icon={faCamera}></FontAwesomeIcon> </div>
-                                    <div className="counter">321 +</div>
-                                    <h6>Running Project</h6>
                                 </div>
                             </div>
                             <div className="col-sm-4">
                                 <div className="Hc">
                                     <div id="countIcon"> <FontAwesomeIcon  icon={faUserCheck}></FontAwesomeIcon> </div>
-                                    <div className="counter">1550 +</div>
+                                    <div className="counter" data-target="1550">500 +</div>
                                     <h6>Happy Client </h6>
+                                </div>
+                            </div>
+                            <div className="col-sm-4">
+                                <div className="Rp">
+                                    <div id="countIcon"> <FontAwesomeIcon  icon={faCamera}></FontAwesomeIcon> </div>
+                                    <div className="counter" data-target="1255">100 +</div>
+                                    <h6>Running Project</h6>
                                 </div>
                             </div>
                         </div>

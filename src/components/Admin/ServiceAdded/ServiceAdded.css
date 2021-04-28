@@ -2,6 +2,7 @@
     padding: 40px;
     padding-bottom: 0;
     box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    width: 800px;
 }
 .serviceAddBtn{
     padding: 10px 50px;
@@ -17,4 +18,17 @@
 .teamTitle{
     text-align:center;
     color: #7a7a7a;
+}
+
+@media(max-width: 768px){
+    .serviceAddForm-container{
+        width: 450px;
+        margin-bottom: 50px;
+        padding-bottom: 40px;
+    }
+
+    .serviceAddBtn{
+        float: left;
+        
+    }
 }

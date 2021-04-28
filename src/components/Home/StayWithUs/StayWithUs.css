@@ -25,6 +25,10 @@
     background: #da7b00;
     color: #ffffff;
 }
+#searchBtn:hover{
+    background: #707070;
+    
+}
 @media(max-width: 768px){
     .stayContent{
         width: 450px;

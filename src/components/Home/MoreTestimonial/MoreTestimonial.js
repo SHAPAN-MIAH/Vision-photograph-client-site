@@ -1,11 +1,13 @@
 import { faQuoteRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
-import './Testimonial.css'
-const Testimonial = (props) => {
+import './MoreTestimonial.css'
+
+const MoreTestimonial = (props) => {
     const {name, state, imageUrl, description} = props.testimonial;
+
     return (
-        // <div className="col-md-4 mb-3">
+        <div className="col-md-4 mb-4">
             <div className="card card-container">
             
             <div className="card-footer d-flex  align-items-center">
@@ -22,8 +24,8 @@ const Testimonial = (props) => {
                 <p className="card-text text-center">{description}</p>
             </div>
        </div>
-        // </div>
+        </div>
     );
 };
 
-export default Testimonial;
+export default MoreTestimonial;

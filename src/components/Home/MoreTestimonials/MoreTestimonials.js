@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from 'react';
-import './Testimonials.css';
-import Testimonial from '../Testimonial/Testimonial';
+import './MoreTestimonials.css';
+import MoreTestimonial from '../MoreTestimonial/MoreTestimonial';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
 
 
-const Testimonials = () => {
+const MoreTestimonials = () => {
     const [testimonialData, setTestimonialData] = useState([])
-    const someReviews = testimonialData.slice(0,3);
+    // const someReviews = testimonialData.slice(0,3);
 
     useEffect(()=> {
         fetch('https://fast-garden-51323.herokuapp.com/reviews')
@@ -24,21 +24,21 @@ const Testimonials = () => {
             </div>
            <div className="container">
            <h3 className="clientSays">What Our <span>Clients <br/> Says</span> </h3>
-               {/* <div className="row"> */}
+               
                <div className="card-deck mt-5">
                     {
-                        someReviews.map(testimonial => <Testimonial key={testimonial.key} testimonial={testimonial} key={testimonial.name}/>)
+                        testimonialData.map(testimonial => <MoreTestimonial key={testimonial.key} testimonial={testimonial} key={testimonial.name}/>)
                     }
                 </div>
-               {/* </div> */}
+               
            </div>
            <div className="text-center m-5">
-                 <Link to="/moreTestimonial">
-                    <button className="showMoreBtn">Show More <FontAwesomeIcon  icon={faArrowRight}></FontAwesomeIcon></button>
+                 <Link to="/">
+                    <button className="showMoreBtn">Back To Home <FontAwesomeIcon  icon={faArrowRight}></FontAwesomeIcon></button>
                  </Link>
             </div> 
        </section>
     );
 };
 
-export default Testimonials;
+export default MoreTestimonials;

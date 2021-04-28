@@ -15,11 +15,11 @@ import PrivateRoute from "./components/Login/PrivateRoute/PrivateRoute"
 import Dashboard from "./components/Dashboard/Dashboard/Dashboard";
 import AddAdmin from "./components/Admin/AddAdmin/AddAdmin";
 import AppointmentLists from "./components/UserComponent/AppointmentLists/AppointMentLists";
-import Team from "./components/Home/Team/Team";
+import MoreTeam from "./components/Home/MoreTeam/MoreTeam";
 import NoMatch from "./components/NoMatch/NoMatch";
 import ContactUs from "./components/ContactUs/ContactUs";
 import Settings from "./components/Admin/Settings/Settings";
-import Testimonials from "./components/Home/Testimonials/Testimonials";
+import MoreTestimonials from "./components/Home/MoreTestimonials/MoreTestimonials";
 import Appointment from "./components/UserComponent/Appointment/Appointment/Appointment";
 export const UserContext = createContext();
 
@@ -36,11 +36,11 @@ function App() {
                 <Route path="/login">
                   <Login/>
                 </Route>
-                <Route path="/team">
-                  <Team/>
+                <Route path="/moreTeam">
+                  <MoreTeam/>
                 </Route>
-                <Route path="/testimonial">
-                  <Testimonials/>
+                <Route path="/moreTestimonial">
+                  <MoreTestimonials/>
                 </Route>
                 <Route path="/contact">
                   <ContactUs/>

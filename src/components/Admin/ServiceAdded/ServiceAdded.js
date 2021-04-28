@@ -30,7 +30,7 @@ const ServiceAdded = () => {
                     <Sidebar/>
                 </div>
                 <div className="col-md-10">
-                    <div className="serviceAddForm-container mt-5" style={{width: "800px"}}>
+                    <div className="serviceAddForm-container mt-5">
                         <h4 className="teamTitle">Add Service</h4>
                             <h2 className="text-center text-brand">{}</h2>
                             <form className="p-5" onSubmit={handleSubmit(onSubmit)}>

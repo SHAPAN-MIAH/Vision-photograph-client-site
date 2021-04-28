@@ -16,7 +16,7 @@
 }
 
 .headerMain-dtl p{
-    color: #525252;
+    color: #424242;
     font-weight: 500;
 }
 .getAppointmentBtn{
@@ -45,7 +45,7 @@
 }
 .showCase-img img{
     height: 450px;
-    /* width: 100%; */
+    
 }
 
 @media(max-width:768px){

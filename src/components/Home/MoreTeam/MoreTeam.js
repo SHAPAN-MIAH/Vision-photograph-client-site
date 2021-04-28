@@ -1,15 +1,14 @@
 import React, { useEffect, useState } from 'react';
-import TeamDtl from '../TeamDtl/TeamDtl';
-import './Team.css';
+import MoreTeamDtl from '../MoreTeamDtl/MoreTeamDtl';
+import './MoreTeam.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 
 
 
-const Team = () => {
-    const [teams, setTeams] = useState([]);
-    const teamViews = teams.slice(0,9);
+const MoreTeam = () => {
+    const [teams, setTeams] = useState([])
     useEffect(() => {
         fetch('https://fast-garden-51323.herokuapp.com/teams')
         .then(res => res.json())
@@ -25,16 +24,16 @@ const Team = () => {
                     </div>
                 <div className="row">
                     {
-                     teamViews.map(teamData => <TeamDtl key={teamData.key} teamData={teamData}></TeamDtl> )
+                     teams.map(teamData => <MoreTeamDtl key={teamData.key} teamData={teamData}></MoreTeamDtl> )
                     }
                 </div>  
                 <div className="text-center m-3">
-                 <Link to="/moreTeam">
-                    <button className="showMoreBtn">Show More <FontAwesomeIcon  icon={faArrowRight}></FontAwesomeIcon></button>
+                 <Link to="/">
+                    <button className="showMoreBtn">Back To Home<FontAwesomeIcon  icon={faArrowRight}></FontAwesomeIcon></button>
                  </Link>
                 </div> 
         </section>
     );
 };
 
-export default Team;
+export default MoreTeam;

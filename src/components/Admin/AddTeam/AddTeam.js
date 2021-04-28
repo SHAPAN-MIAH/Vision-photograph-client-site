@@ -45,7 +45,7 @@ const AddTeam = () => {
                     <Sidebar/>
                 </div>
                 <div className="col-md-10">
-                    <div className="AddTeamForm-container mt-5" style={{width: "800px"}}>
+                    <div className="AddTeamForm-container mt-5">
                             <h4>Add Team Member</h4>
                             <form className="p-5" onSubmit={handleSubmit(onSubmit)}>
                                 <div className="form-group">
