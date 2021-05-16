@@ -18,3 +18,18 @@
 .reviewAddBtn:hover{
     background: #da7b00;
 }
+@media(max-width: 768px){
+    .review-form{
+        width: 650px;
+    }
+}
+@media(max-width: 650px){
+    .review-form{
+        width: 550px;
+    }
+}
+@media(max-width: 576px){
+    .review-form{
+        width: 450px;
+    }
+}

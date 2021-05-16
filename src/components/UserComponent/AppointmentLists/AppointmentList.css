@@ -1,0 +1,9 @@
+
+
+@media(max-width: 768px){
+    .appointmentData-table{
+        width: 300px;
+        margin-left: 0px;
+    }
+    
+}

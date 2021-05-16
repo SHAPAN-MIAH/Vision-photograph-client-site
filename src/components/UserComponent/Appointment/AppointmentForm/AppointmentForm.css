@@ -42,6 +42,9 @@
         height: auto;
         
     }
+    .form-Container{
+        width: 450px;
+    }
     .appointment-submitBtn{
         padding: 7px 170px;
         text-align: center;

@@ -36,7 +36,10 @@
 @media(max-width: 768px){
     .sidebar{
         position: relative;
-        /* margin-left: 20px; */
+        box-shadow: none;
+      
     }
-
+    .sidebar li{
+        /* font-size: 10px; */
+    }
 }

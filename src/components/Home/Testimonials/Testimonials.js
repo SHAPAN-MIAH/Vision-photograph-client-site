@@ -17,7 +17,7 @@ const Testimonials = () => {
     }, [])
     
     return (
-       <section className="testimonials my-5">
+       <section className="testimonials">
            <div className="testimonial-header">
                 <h3 className="testimonial-title">TESTIMONIAL</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, provident! Esse dolorum culpa aspernatur iusto.</p>

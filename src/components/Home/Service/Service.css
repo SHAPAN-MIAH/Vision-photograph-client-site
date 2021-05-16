@@ -1,10 +1,11 @@
 .services-Container{
-    margin-top: 100px;
+    margin-top: 80px;
 }
 .service-title{
     width: 500px;
     margin: auto;
     font-family: sans-serif;
+    
 }
 .service-title h3{
     color: #da7b00;
@@ -12,6 +13,7 @@
 }
 .service-title p{
     color: #7a7a7a;
+    margin-bottom: 30px;
 }
 
 @media(max-width: 768px){
@@ -19,6 +21,6 @@
         width: 350px;
     }
     .services-Container{
-        margin-top: 150px;
+        margin-top: 80px;
     }
 }

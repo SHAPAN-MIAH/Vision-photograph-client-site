@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 // import { UserContext } from '../../../App';
 import Navbar from '../../Shared/Navbar/Navbar';
 import UserSidebar from '../UserSidebar/UserSidebar';
+import "./AppointmentList.css"
 
 
 const AppointmentLists = () => {

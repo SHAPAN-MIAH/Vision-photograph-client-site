@@ -4,6 +4,9 @@
     background-position: top right;
     background-size: 150px;
 } */
+.testimonials{
+    margin-top: 80px;
+}
 .testimonials .card{
     border-color: transparent;
 }
@@ -19,6 +22,7 @@
 }
 .testimonial-header h3{
     color: #da7b00;
+    font-weight: 700;
 }
 .testimonial-header p{
     color: #7a7a7a;

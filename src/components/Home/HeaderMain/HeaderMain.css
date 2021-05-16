@@ -1,5 +1,5 @@
 .headerMain-container{
-    margin-top: 100px;
+    margin-top: 120px;
 }
 .headerMain-dtl{
     color: #da7b00;
@@ -8,16 +8,17 @@
     font-family: sans-serif;
     font-size: 35px;
     font-weight: 900;
+    color: #ffffff;
 }
 .headerMain-dtl h2 span{
     font-size: 30px;
     font-weight: 700;
-    color: #707070;
 }
 
 .headerMain-dtl p{
-    color: #424242;
+    color: #f1f1f1;
     font-weight: 500;
+    margin-top: 10px;
 }
 .getAppointmentBtn{
     padding: 10px 30px;
@@ -25,10 +26,11 @@
     color: white;
     border: none;
     border-radius: 5px;
+    
     transition: all .1s ease-in;
 }
 .getAppointmentBtn:hover{
-    background: #707070;
+    background: #444444;
 }
 .showCase-img{
     width:350px;

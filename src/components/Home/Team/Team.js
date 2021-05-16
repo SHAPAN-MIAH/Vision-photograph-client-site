@@ -16,6 +16,8 @@ const Team = () => {
         .then(data => setTeams(data))
     }, [])
 
+   
+
     return (
         <section className="teamSection container">
             

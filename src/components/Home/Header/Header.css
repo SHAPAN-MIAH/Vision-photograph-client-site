@@ -1,7 +1,8 @@
 .header-container{
     height: 620px;
     position: relative;
-    background-image:url('../../../images/magnolias-on-silk-vienna-wedding-couple-slider-1440x600.png');
+    background-image:linear-gradient(#5c5c5c30,#5c5c5c30),
+    linear-gradient(#5c5c5c30,#5c5c5c30),url('../../../images/magnolias-on-silk-vienna-wedding-couple-slider-1440x600.png');
     background-size: cover;
     position: relative;
 }

@@ -9,7 +9,7 @@ import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGoogle } from '@fortawesome/free-brands-svg-icons';
 import { UserContext } from '../../../App';
-import LoginBg from '../../../images/vison photogrphay img.png';
+import LoginBg from '../../../images/rsz_vison_photogrphay_img.png';
 import Navbar from '../../Shared/Navbar/Navbar';
 
 
@@ -148,6 +148,20 @@ const Login = () => {
         });
       }
 
+    //   const handelSignOut = () => {
+    //   firebase.auth().signOut()
+    //   .then(() => {
+    //     const signedOutUser = {
+    //       isSignedIn : false,
+    //       name: "",
+    //       email: '',
+    //       photo: ""
+    //     }
+    //     setUser(signedOutUser)
+    //   }).catch((error) => {
+    //     // An error happened.
+    //   });
+    // }
 
     return (
         <section>
@@ -178,7 +192,7 @@ const Login = () => {
                           <br/>
                           <h5 className="or">Or</h5>
                           <button onClick={handelGoogleSignIn} className="google-btn"><FontAwesomeIcon className="gIcon" icon={faGoogle} /> Continue With Google</button>
-                  
+                          
                     </div>
                     <div className="col-md-6">
                         <img className="img-fluid loginImg" src={LoginBg} alt="" />

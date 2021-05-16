@@ -1,13 +1,13 @@
 .team-heading{
 	width:320px;
 	text-align:center;
-	padding-top: 50px;
+	/* padding-top: 50px; */
 	margin:auto;
 	font-family:sans-serif;
 	margin-bottom: 10px;
 	color:#da7b00;
     font-weight: 700;
- }	
+ }
 
  .tm-hdContent{
 	width: 550px;
@@ -15,7 +15,7 @@
 	margin:auto;
 	font-family:'poppins', sans-serif;
 	font-size: 15px;
-	margin-bottom: 30px;
+	margin-bottom: 50px;
 	color: #7a7a7a;
 	
 }
@@ -25,6 +25,9 @@
 	background: #f3f3f3;
 	padding: 10px 30px;
 	color: #7a7a7a;
+}
+.teamSection{
+	margin-top: 80px;
 }
 
 @media(max-width: 768px){

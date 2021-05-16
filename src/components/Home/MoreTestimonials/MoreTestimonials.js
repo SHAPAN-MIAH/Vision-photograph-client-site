@@ -4,6 +4,7 @@ import MoreTestimonial from '../MoreTestimonial/MoreTestimonial';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from 'react-router-dom';
+import Navbar from '../../Shared/Navbar/Navbar';
 
 
 const MoreTestimonials = () => {
@@ -17,26 +18,32 @@ const MoreTestimonials = () => {
     }, [])
     
     return (
-       <section className="testimonials my-5">
-           <div className="testimonial-header">
-                <h3 className="testimonial-title">TESTIMONIAL</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, provident! Esse dolorum culpa aspernatur iusto.</p>
+       <section >
+           <div style={{boxShadow: "0 3px 10px rgba(0,0,0,0.2)"}}>
+                <Navbar/>
             </div>
-           <div className="container">
-           <h3 className="clientSays">What Our <span>Clients <br/> Says</span> </h3>
-               
-               <div className="card-deck mt-5">
-                    {
-                        testimonialData.map(testimonial => <MoreTestimonial key={testimonial.key} testimonial={testimonial} key={testimonial.name}/>)
-                    }
+
+           <div className="testimonials my-5">
+                <div className="testimonial-header">
+                        <h3 className="testimonial-title">TESTIMONIAL</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, provident! Esse dolorum culpa aspernatur iusto.</p>
+                    </div>
+                <div className="container">
+                <h3 className="clientSays">What Our <span>Clients <br/> Says</span> </h3>
+                    
+                    <div className="card-deck mt-5">
+                            {
+                                testimonialData.map(testimonial => <MoreTestimonial key={testimonial.key} testimonial={testimonial} key={testimonial.name}/>)
+                            }
+                        </div>
+                    
                 </div>
-               
+                <div className="text-center m-5">
+                        <Link to="/">
+                            <button className="showMoreBtn">Back To Home <FontAwesomeIcon  icon={faArrowRight}></FontAwesomeIcon></button>
+                        </Link>
+                    </div> 
            </div>
-           <div className="text-center m-5">
-                 <Link to="/">
-                    <button className="showMoreBtn">Back To Home <FontAwesomeIcon  icon={faArrowRight}></FontAwesomeIcon></button>
-                 </Link>
-            </div> 
        </section>
     );
 };

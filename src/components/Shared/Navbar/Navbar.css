@@ -1,12 +1,42 @@
 #navbarSupportedContent li a{
-    color:  #3d3d3d;
+    color:  #333333;
+    /* color:  white; */
     font-weight: 500;
 }
 #navbarSupportedContent li a:hover{
-    color: #ff9100;
+    color: #da7b00;
+}
+.navbar{
+    /* background-image: linear-gradient(#99999975,#99999975),
+    linear-gradient(#99999975,#99999975); */
 }
 @media(max-width: 768px){
     #mainlogo{
-        margin-left: 0px !important;
+        margin-left: 400px !important;
+        text-align: center;
+        position: absolute;
     }
+    
+    .navbar-toggler, .navbar-nav li {
+        margin-right: auto;
+        position: relative;
+        
+    }
+    .navbar-toggler{
+        margin-top: 65px
+        
+    }
+    .navbar{
+        padding-bottom: 50px !important;
+    }
+    
+}
+@media(max-width: 576px){
+    #mainlogo{
+        margin-left: 280px !important;
+        text-align: center;
+        position: absolute;
+    }
+    
+    
 }

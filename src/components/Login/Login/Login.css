@@ -13,6 +13,7 @@
     color: #da7b00;
 }
 
+
 button img{
     width: 25px;
     margin-right: 20px;
@@ -22,13 +23,14 @@ button img{
     text-align: center;
     /* margin: 50px 0px; */
     margin-bottom: 0px;
+   
 }
 
 .formContainer{
     width: 400px;
     margin: auto;
     margin-top: 50px;
-    padding: 50px 0px;
+    padding: 70px 0px;
     border-radius: 5px;
     box-shadow: 0 3px 10px rgba(0,0,0,0.2);
 }
@@ -48,6 +50,11 @@ form input{
 #submitBtn{
     border: none;
     background: #707070;
+    color: white
+}
+#submitBtn:hover{
+    border: none;
+    background: #da7b00;
     color: white
 }
 

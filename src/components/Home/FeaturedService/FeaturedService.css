@@ -1,35 +1,41 @@
 .featured-container{
-    padding-top: 60px;
-    padding-bottom: 40px;
-    background: #f3f3f3;
+    margin-top: 80px;
+    padding-top: 45px;
+    padding-bottom: 20px;
+    background: #e0e0e0;
     
 }
 .feature-title{
-    color: #7a7a7a;
+    color: #707070;
 }
 .feature-title span{
     color: #da7b00;
 }
 .feature-dec{
-    color: #5a5a5a;
+    color: #707070;
 }
 
 .count{
-    color: #5a5a5a;
+    color: #707070;
 }
 #countIcon{
-    color: #5a5a5a;
+    color: #707070;
     font-size: 30px;
     transition: all 0.5s;
 }
+.Cp, .Rp, .Hc, .Aw{
+    width: 150px;
+}
+
 .Cp:hover #countIcon,
 .Rp:hover #countIcon,
-.Hc:hover #countIcon{
+.Hc:hover #countIcon,
+.Aw:hover #countIcon{
     transform: rotateY(360deg);
     color: #da7b00;
 }
 .LearnMore-btn{
-    background: #5a5a5a;
+    background: #707070;
     border: none;
     padding: 10px 20px;
     color: white;
@@ -42,16 +48,30 @@
 .counter{
     font-size: 20px;
     font-weight: 500;
-    color: #7a7a7a;
+    color: #707070;
 }
 
 .Cp:hover .counter,
 .Rp:hover .counter,
-.Hc:hover .counter{
+.Hc:hover .counter,
+.Aw:hover .counter{
     color: #da7b00;
 }
 .Cp:hover h6,
 .Rp:hover h6,
-.Hc:hover h6{
+.Hc:hover h6,
+.Aw:hover h6{
     color: #da7b00;
+}
+
+
+@media(max-width: 768px){
+    .Cp, .Rp, .Hc, .Aw{
+        width: auto;
+        margin-top: 25px;
+    }
+    .featuresDes{
+        margin: auto;
+    }
+    
 }
