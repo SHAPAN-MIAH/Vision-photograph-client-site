@@ -1,4 +1,4 @@
-import React, { createContext, lazy, Suspense, useState,  } from "react";
+import React, { createContext, useState,  } from "react";
 import './App.css';
 import {
   BrowserRouter as Router,
@@ -14,18 +14,15 @@ import AddAdmin from "./components/Admin/AddAdmin/AddAdmin";
 import NoMatch from "./components/NoMatch/NoMatch";
 import Settings from "./components/Admin/Settings/Settings";
 import Appointment from "./components/UserComponent/Appointment/Appointment/Appointment";
-import LoadingGif from "./images/loading (1).gif";
+import MoreTeam from "./components/Home/MoreTeam/MoreTeam";
+import MoreTestimonials from "./components/Home/MoreTestimonials/MoreTestimonials";
+import ContactUs from "./components/ContactUs/ContactUs";
+import Login from './components/Login/Login/Login';
+import Admin from "./components/Admin/Admin/Admin";
+import AppointmentLists from "./components/UserComponent/AppointmentLists/AppointMentLists";
+import Home from "./components/Home/Home/Home";
 
 export const UserContext = createContext();
-
-const MoreTeam = lazy(()=> import("./components/Home/MoreTeam/MoreTeam"));
-const MoreTestimonials = lazy(()=> import("./components/Home/MoreTestimonials/MoreTestimonials"));
-const ContactUs = lazy(()=> import("./components/ContactUs/ContactUs"));
-const Login = lazy(()=> import('./components/Login/Login/Login'));
-const Admin = lazy(()=> import("./components/Admin/Admin/Admin"));
-const AppointmentLists = lazy(()=> import("./components/UserComponent/AppointmentLists/AppointMentLists"));
-const Home = lazy(()=> import("./components/Home/Home/Home"));
-
 
 
 
@@ -36,11 +33,11 @@ function App() {
           <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
           <Router>
               <Switch>
-                <Suspense fallback={<div className=" d-flex justify-content-center "><img style={{marginTop: "150px"}} src={LoadingGif} alt="" /></div>}>
+                
                     <Route exact path="/">
                       <Home/>
                     </Route>
-
+            
                     <Route path="/login">
                       <Login/>
                     </Route>
@@ -64,42 +61,42 @@ function App() {
                     <PrivateRoute path="/appointmentLists">
                       <AppointmentLists />
                     </PrivateRoute>
-                </Suspense>
+                
 
                 <PrivateRoute path="/appointment/:id">
-                  <Appointment/>
+                  <Appointment />
                 </PrivateRoute>
 
                 <PrivateRoute path="/serviceAdded">
-                  <ServiceAdded/>
+                  <ServiceAdded />
                 </PrivateRoute>
 
                 <PrivateRoute path="/addTeam">
-                  <AddTeam/>
+                  <AddTeam />
                 </PrivateRoute>
 
                 <PrivateRoute path="/addAdmin">
-                  <AddAdmin/>
+                  <AddAdmin />
                 </PrivateRoute>
 
                 <PrivateRoute path="/review">
-                  <Reviews/>
+                  <Reviews />
                 </PrivateRoute>
 
                 <PrivateRoute path="/appointment">
-                  <Appointment/>
+                  <Appointment />
                 </PrivateRoute>
 
                 <PrivateRoute path="/admin/appointmentList">
-                  <Dashboard/>
+                  <Dashboard />
                 </PrivateRoute>
 
                 <PrivateRoute path="/setting">
-                  <Settings/>
+                  <Settings />
                 </PrivateRoute>
 
                 <Route path="*">
-                  <NoMatch/>
+                  <NoMatch />
                 </Route>
               </Switch>
           </Router>

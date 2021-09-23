@@ -1,14 +1,17 @@
-import React from 'react';
+import React,{ lazy, Suspense} from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+// import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
-
+import LoadingGif from "./images/loading (1).gif";
+const App = lazy(()=> import("./App"));
 ReactDOM.render(
   <React.StrictMode>
+    <Suspense fallback={<div className=" d-flex justify-content-center "><img style={{marginTop: "150px"}} src={LoadingGif} alt="" /></div>}>
     <App />
+    </Suspense>
   </React.StrictMode>,
   document.getElementById('root')
 );
